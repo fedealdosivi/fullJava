@@ -1,4 +1,4 @@
-package full.map;
+package fulljava.map;
 
 public class Main {
     public static void main(String[] args) {
