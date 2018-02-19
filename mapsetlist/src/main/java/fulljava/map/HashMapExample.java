@@ -14,8 +14,8 @@ public class HashMapExample extends Observable{
     }
 
     public void setData(String key, String value){
-        if (data.containsValue(value)) {
-            data.replace(key, value);
+        if (data.containsKey(key)) {
+            data.put(key,value);;
         } else {
             data.put(key, value);
         }
