@@ -1,4 +1,4 @@
-package fulljava.map;
+package prueba.map;
 
 import java.util.HashMap;
 import java.util.Observable;

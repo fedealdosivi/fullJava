@@ -1,4 +1,4 @@
-package fulljava.map;
+package prueba.map;
 
 import java.util.Hashtable;
 import java.util.Observable;
@@ -17,15 +17,15 @@ public class HashTableExample extends Observable{
     //agrega un valor, si ya existe la clave lo reemplaza y notifica al observador
     //con el nuevo valor y el viejo
     public void setData(String key, String value){
-            if (data.containsKey(key)) {
-                String valorAntiguo=data.get(key);
-                data.put(key,value);
-                notifyObservers(key+ value + " Valor Antiguo=" +valorAntiguo);
-            } else {
-                data.put(key, value);
-                notifyObservers(key + value);
-            }
-            verifWarning(value);
+        if (data.containsKey(key)) {
+            String valorAntiguo=data.get(key);
+            data.put(key,value);
+            notifyObservers(key+ value + " Valor Antiguo=" +valorAntiguo);
+        } else {
+            data.put(key, value);
+            notifyObservers(key + value);
+        }
+        verifWarning(value);
     }
 
     //verifica que la cantidad de datos es mayor o igual a la variable
@@ -42,9 +42,8 @@ public class HashTableExample extends Observable{
 
     public void printData(){
         for (String s:data.values()
-             ) {
+                ) {
             System.out.println(s);
-            System.out.println(data.size());
         }
         System.out.println();
     }

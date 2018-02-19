@@ -1,4 +1,4 @@
-package fulljava.map;
+package prueba.map;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -20,7 +20,6 @@ public class Controller implements Observer {
         hashTableExample.printData();
     }
 
-    @Override
     public void update(Observable o, Object arg) {
         System.out.println("Nueva Actualizacion" + o + " " + arg);
     }

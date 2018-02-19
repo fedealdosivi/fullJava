@@ -1,4 +1,4 @@
-package fulljava;
+package prueba;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

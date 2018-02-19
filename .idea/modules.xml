@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/fullJava.iml" filepath="$PROJECT_DIR$/.idea/fullJava.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mapsetlist/mapsetlist.iml" filepath="$PROJECT_DIR$/mapsetlist/mapsetlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map.iml" filepath="$PROJECT_DIR$/map.iml" />
     </modules>
   </component>
 </project>
