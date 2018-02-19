@@ -1,4 +1,4 @@
-package map;
+package full.map;
 
 public class Main {
     public static void main(String[] args) {

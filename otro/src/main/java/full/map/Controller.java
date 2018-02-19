@@ -1,4 +1,4 @@
-package map;
+package full.map;
 
 import java.util.Observable;
 import java.util.Observer;
