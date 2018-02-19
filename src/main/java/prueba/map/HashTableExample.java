@@ -31,12 +31,13 @@ public class HashTableExample extends Observable{
     //verifica que la cantidad de datos es mayor o igual a la variable
     //warning
 
-    public boolean verifWarning(String value){
-        if(data.size()>= warning){
-            notifyObservers(value);
-            return true;
-        }else {
-            return false;
+    public void verifWarning(String value){
+        if(data.size()== warning){
+            setChanged();
+            notifyObservers("Se alcanzo el limite permitido");
+        }else if(data.size()>warning){
+            setChanged();
+            notifyObservers("Se supero el limite permitido");
         }
     }
 
