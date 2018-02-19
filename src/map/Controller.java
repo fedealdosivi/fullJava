@@ -22,6 +22,6 @@ public class Controller implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        System.out.println("WARNINGGGGGG");
+        System.out.println("Nueva Actualizacion" + o + " " + arg);
     }
 }
