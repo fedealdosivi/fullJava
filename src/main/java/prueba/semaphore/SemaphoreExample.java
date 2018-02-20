@@ -2,7 +2,7 @@ package prueba.semaphore;
 
 import java.util.concurrent.Semaphore;
 
-public class SemaphoreExample extends Thread {
+public class SemaphoreExample implements Runnable {
 
     private Semaphore printer;
     private String mensaje;
@@ -14,7 +14,6 @@ public class SemaphoreExample extends Thread {
         this.papelDisponible=10;
     }
 
-    @Override
     public void run() {
         while (papelDisponible>=0) {
             try {

@@ -8,9 +8,12 @@ public class Main {
         SemaphoreExample worker1=new SemaphoreExample("cursiva",semaphore);
         SemaphoreExample worker2=new SemaphoreExample("negrita",semaphore);
         SemaphoreExample worker3=new SemaphoreExample("sub",semaphore);
-        worker1.start();
-        worker2.start();
-        worker3.start();
+        Thread t1=new Thread(worker1);
+        Thread t2=new Thread(worker2);
+        Thread t3=new Thread(worker3);
+        t1.start();
+        t2.start();
+        t3.start();
 
     }
 }
