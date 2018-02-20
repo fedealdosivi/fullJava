@@ -20,9 +20,11 @@ public class HashTableExample extends Observable{
         if (data.containsKey(key)) {
             String valorAntiguo=data.get(key);
             data.put(key,value);
+            setChanged();
             notifyObservers(key+ value + " Valor Antiguo=" +valorAntiguo);
         } else {
             data.put(key, value);
+            setChanged();
             notifyObservers(key + value);
         }
         verifWarning(value);
